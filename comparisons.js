@@ -21,24 +21,31 @@ console.log("Is numberTeachers greater than numberStudents?", numberTeachers > n
 // this should log: "Is numberTeachers greater than numberStudents?" false
 
 // YOU DO: log the result of the comparison: is numberTeachers less than numberStudents?
+console.log("is numberTeachers less than numberStudents?", numberTeachers < numberStudents);
 // this should log: true
 
 // YOU DO: log the result of the comparison: is numberTeachers strictly equal to stringTeachers?
+console.log("is numberTeachers strictly equal to stringTeachers?", numberTeachers === stringTeachers);
 // this should log: false
 
 // YOU DO: log the result of the comparison: is numberTeachers not equal to numberStudents?
+console.log("is numberTeachers not equal to numberStudents?", numberTeachers !== numberStudents);
 // this should log: true
 
 // YOU DO: log the result of the comparison: is numberStudents greater than or equal to 20?
+console.log("is numberStudents greater than or equal to 20?", numberStudents >=20)
 // this should log: true
 
 // YOU DO: log the result of the comparison: is numberStudents greater than or equal to 21?
+console.log("is numberStudents greater than or equal to 21?", numberStudents >= 21)
 // this should log: false
 
 // YOU DO: log the result of the comparison: is numberStudents less than or equal to 20?
+console.log("is numberStudents less than or equal to 20?", numberStudents <= 20);
 // this should log: true
 
 // YOU DO: log the result of the comparison: is numberStudents less than or equal to 21?
+console.log("is numberStudents less than or equal to 21?", numberStudents <=21);
 // this should log: true
 
 
@@ -53,20 +60,24 @@ console.log("Is numberTeachers greater than numberStudents?", numberTeachers > n
 
 console.log(4 < 9);
 // YOU DO: Explain.
+// log the result of the comparison: is 4 less than 9? expected log result: true
 
 var books = 3;
 console.log(4 < books);
 // YOU DO: Explain.
+// log the result of the comparison: is 4 less than books? expected log result: false
 
 var friends = 6;
 var siblings = 2;
 console.log(friends > siblings);
 // YOU DO: Explain.
+// log the result of the comparison: is friends greater than siblings? expected log result: true
 
 var attendees = 9;
 var meals = 8;
 console.log(attendees !== meals);
 // YOU DO: Explain.
+// log the result of the comparison: is attendees not strictly equal to meals? expected log result: true
 
 
 // #-------------------
@@ -89,15 +100,20 @@ var age = 1;
 
 // YOU DO:
 // Determine if the dog loves to play and loves treats
-
+console.log("loves to play and loves treats", lovesToPlay && lovesTreats);
+// --> true
 
 // Determine if the dog loves to play and loves the dog park
-
+console.log("loves to play and loves the dog park", lovesToPlay && lovesDogPark)
+// --> false
 
 // Determine if the dog loves to play or loves the dog park
-
+console.log("loves to play or loves the dog park", lovesToPlay || lovesDogPark);
+// --> true
 
 // Determine if the dog loves to play and is a puppy
+console.log("loves to play and is a puppy", lovesToPlay && age < 1)
+// --> false
 
 // What did your final line of code evaluate to? Why do you think that is? Explain.
-// ANSWER:
+// ANSWER: The final line of code evaluated to false, because I (subjectively) determined that "puppy" would be defined as being less than 1 year old, and equated that to age < 1 in my code. Becuase the dog's age is exactly 1, this statement is false and therefore the full && statement cannot be rendered true. If I changed my definition of puppy to age < 2 or age <= 1, then this statement would evaluate as true. This can change because the definition of "puppy" is not finite in this context.
